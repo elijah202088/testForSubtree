@@ -1,0 +1,5 @@
+		$job = Job::find($adem->job_id);
+		$lang = Auth::user()->lang;
+		Log::info($lang);
+		$setting = Settings::find(8)->value['00'];
+		Log::info($setting);
